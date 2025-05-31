@@ -1,0 +1,13 @@
+rs/dut.sv:110 YES:SyncFF
+rs/sva.svh:48 YES:SyncFF
+rs/sva.svh:72 YES:SyncFF
+==================================================
+Unified Inference Statistics
+Number of always_ff:                   2
+Number of always_latch:                0
+Number of always @*:                   0
+Number of always_comb :                3
+Number of always :                     1
+Number of flip-flop candidates:        3
+Number of synchronous flops inferred:  3
+Number of Asynchronous flops inferred: 0

@@ -1,0 +1,48 @@
+<session version="1.1" release="V-2023.12-SP2-1" timestp="2025-05-28 18:02:00 GMT">
+  <info>
+    <attr name="datetime" value="Wed May 28 14:02:01 2025
+"/>
+    <attr name="command" value="urg -dir cov_work/rs -report urgReport/rs -metric line+branch+assert+cond+fsm+group"/>
+    <attr name="top_instance" value="uvm_custom_install_verdi_recording,top,uvm_pkg"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="74/471" />
+    <metric name="Cond" value="5/101" />
+    <metric name="Branch" value="15/199" />
+    <metric name="Assert" value="133/167" />
+    <metric name="Group" value="80%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="rs_pkg::rs_coverage::rs_cg">
+      <metric name="Group" value="80%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="133/167" />
+      <score name="Score" value="79.64" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="133/167" />
+      <score name="Score" value="79.64" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="133/167" />
+      <score name="Score" value="79.64" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>
