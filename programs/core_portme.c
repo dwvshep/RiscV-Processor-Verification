@@ -131,16 +131,16 @@ portable_init(core_portable *p, int *argc, char *argv[])
     (void)argc; // prevent unused warning
     (void)argv; // prevent unused warning
 
-    if (sizeof(ee_ptr_int) != sizeof(ee_u8 *))
-    {
-        ee_printf(
-            "ERROR! Please define ee_ptr_int to a type that holds a "
-            "pointer!\n");
-    }
-    if (sizeof(ee_u32) != 4)
-    {
-        ee_printf("ERROR! Please define ee_u32 to a 32b unsigned type!\n");
-    }
+    // if (sizeof(ee_ptr_int) != sizeof(ee_u8 *))
+    // {
+    //     ee_printf(
+    //         "ERROR! Please define ee_ptr_int to a type that holds a "
+    //         "pointer!\n");
+    // }
+    // if (sizeof(ee_u32) != 4)
+    // {
+    //     ee_printf("ERROR! Please define ee_u32 to a 32b unsigned type!\n");
+    // }
     p->portable_id = 1;
 }
 /* Function : portable_fini

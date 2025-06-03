@@ -666,3 +666,14 @@ PRINT_COLOR = if [ -t 0 ]; then tput setaf $(1) ; fi; echo $(2); if [ -t 0 ]; th
 # Make functions are called like this:
 # $(call PRINT_COLOR,3,Hello World!)
 # NOTE: adding '@' to the start of a line avoids printing the command itself, only the output
+
+
+# riscv gcc -mno-relax -march=rv32im -mabi=ilp32 -nostartfiles 
+# -std=gnu11 -mstrict-align -mno-div -DITERATIONS=1 
+# -DPERFORMANCE_RUN=1 -O0 programs/crt.s programs/core_main.c 
+# programs/core_list_join.c programs/core_matrix.c 
+# programs/core_state.c programs/core_util.c 
+# programs/core_portme.c -T programs/linker.lds 
+# -o programs/mem/core_main.elf
+
+# ./build/cpu.simv +MEMORY= +OUTPUT=output/$* > output/$*.log
